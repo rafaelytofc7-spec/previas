@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#15803d">
+<title>Restaurante Central — Cardápio do dia e marmitex em Unaí (prévia)</title>
+<meta name="description" content="Restaurante Central, self-service em Unaí-MG. Prévia demonstrativa.">
+<style>
+
+*{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.5;color:var(--ink);background:var(--bg);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+.wrap{width:min(1120px,100% - 2.5rem);margin-inline:auto}
+.demo-banner{position:relative;z-index:60;display:flex;gap:.5rem 1rem;flex-wrap:wrap;align-items:center;justify-content:center;
+  padding:.45rem .9rem;background:#111827;color:#f9fafb;font-size:.78rem;text-align:center;border-bottom:2px solid #facc15}
+.demo-banner a{color:#facc15;font-weight:700;text-decoration:none;white-space:nowrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.85rem 1.25rem;border-radius:999px;border:0;cursor:pointer;
+  font-weight:700;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease,background .15s;min-height:48px}
+.btn:active{transform:scale(.97)}
+.btn-wa{background:#25d366;color:#06381b}
+.btn-wa:hover{box-shadow:0 8px 24px rgba(37,211,102,.35)}
+.btn svg{width:20px;height:20px;flex:none}
+.section{padding:4rem 0}
+.eyebrow{display:inline-block;font-size:.75rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:.5rem}
+h1,h2,h3{line-height:1.15}
+h2{font-size:clamp(1.6rem,4.5vw,2.4rem);margin-bottom:.75rem}
+.lead{color:var(--muted);max-width:60ch}
+.grid{display:grid;gap:1rem}
+.note{font-size:.78rem;color:var(--muted);margin-top:.9rem}
+.tag-demo{display:inline-block;font-size:.65rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;padding:.15rem .45rem;border-radius:6px;background:#fef3c7;color:#92400e;vertical-align:middle}
+.field{display:grid;gap:.35rem}
+.field label{font-size:.85rem;font-weight:600}
+.field input,.field select,.field textarea{width:100%;padding:.8rem .9rem;border-radius:12px;border:1.5px solid var(--line);background:var(--field,#fff);min-height:48px}
+.field input:focus,.field select:focus,.field textarea:focus{outline:3px solid color-mix(in srgb,var(--accent) 35%,transparent);border-color:var(--accent)}
+.fab-wa{position:fixed;right:1rem;bottom:1rem;z-index:50;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;
+  box-shadow:0 10px 30px rgba(0,0,0,.25);text-decoration:none}
+.fab-wa svg{width:30px;height:30px;fill:#fff}
+.hours{width:100%;border-collapse:collapse;font-size:.92rem}
+.hours td{padding:.45rem 0;border-bottom:1px dashed var(--line)}
+.hours td:last-child{text-align:right;font-weight:600}
+.hours tr.today td{color:var(--accent);font-weight:800}
+.site-footer{padding:2.5rem 0 6rem;font-size:.85rem;color:var(--muted);border-top:1px solid var(--line)}
+.site-footer .credit{margin-top:1rem;padding:.8rem 1rem;border-radius:12px;background:color-mix(in srgb,var(--accent) 8%,transparent)}
+.site-footer .credit a{color:var(--accent);font-weight:700}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+.periods label,.seg label,.chips label,.sizes label{position:relative}
+.periods input,.seg input,.chips input,.sizes input{left:0;top:0;width:1px;height:1px;pointer-events:none}
+.sched-wrap>*,.order>*,.enroll>*,.booking>*,.info>*,.app>*,.hero-grid>*,.biz>*,.grid>*{min-width:0}
+.toast{position:fixed;left:50%;bottom:5.5rem;transform:translateX(-50%) translateY(20px);background:#111827;color:#fff;padding:.7rem 1rem;border-radius:12px;
+  font-size:.9rem;opacity:0;pointer-events:none;transition:.25s;z-index:80;max-width:90vw;text-align:center}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+
+:root{--bg:#fffdf7;--ink:#1f2a1f;--muted:#5f6b5c;--accent:#15803d;--accent2:#eab308;--line:#e7e2d3;--card:#fff}
+.nav{position:sticky;top:0;z-index:40;background:rgba(255,253,247,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;height:62px}
+.brand{display:flex;gap:.55rem;align-items:center;font-weight:900;text-decoration:none;font-size:1.08rem}
+.brand i{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-style:normal;background:var(--accent);color:#fff;font-size:1.1rem;box-shadow:inset 0 0 0 3px #fff,0 0 0 2px var(--accent)}
+.nav .btn{min-height:40px;padding:.5rem 1rem;font-size:.85rem;background:var(--accent);color:#fff;white-space:nowrap}
+.brand{white-space:nowrap}
+.hero{padding:2.4rem 0 2rem;background:
+  radial-gradient(circle at 85% 10%,rgba(234,179,8,.25),transparent 40%),
+  radial-gradient(circle at 0% 100%,rgba(21,128,61,.14),transparent 45%)}
+.hero-grid{display:grid;gap:1.6rem;align-items:center}
+@media(min-width:860px){.hero-grid{grid-template-columns:1.1fr .9fr}.hero{padding:4rem 0}}
+.pill{display:inline-flex;gap:.4rem;align-items:center;padding:.35rem .75rem;border-radius:999px;background:#fef9c3;color:#854d0e;font-weight:700;font-size:.8rem}
+.hero h1{font-size:clamp(2.1rem,8vw,3.6rem);letter-spacing:-.02em;margin:.8rem 0 .6rem}
+.hero h1 span{color:var(--accent)}
+.hero .cta{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1.3rem}
+.btn-green{background:var(--accent);color:#fff}.btn-green:hover{box-shadow:0 10px 24px rgba(21,128,61,.35)}
+.btn-out{border:1.5px solid var(--line);background:#fff}
+.plate{position:relative;aspect-ratio:1;width:min(340px,86%);margin:1rem auto;border-radius:50%;background:radial-gradient(circle,#fff 58%,#f1efe6 59%,#fff 66%,#e7e2d3 67%);box-shadow:0 30px 60px rgba(31,42,31,.15);display:grid;place-items:center}
+.plate .food{width:62%;aspect-ratio:1;border-radius:50%;background:
+ conic-gradient(#f5f0e1 0 110deg,#6b3f1d 110deg 190deg,#d97706 190deg 260deg,#65a30d 260deg 320deg,#facc15 320deg 360deg);
+ filter:saturate(1.05);box-shadow:inset 0 0 0 6px rgba(255,255,255,.4)}
+.plate .tag{position:absolute;background:#fff;border:1px solid var(--line);border-radius:14px;padding:.45rem .7rem;font-size:.78rem;font-weight:700;box-shadow:0 8px 20px rgba(0,0,0,.08)}
+.t1{top:8%;left:-2%}.t2{bottom:12%;right:-4%}.t3{bottom:-2%;left:10%}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem;margin-top:1.4rem}
+.facts div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:.7rem;font-size:.75rem;color:var(--muted);text-align:center}
+.facts b{display:block;color:var(--ink);font-size:1rem}
+.days{display:flex;gap:.4rem;overflow-x:auto;scrollbar-width:none;margin-top:1.2rem}
+.days button{flex:none;border:1.5px solid var(--line);background:#fff;border-radius:14px;padding:.55rem .9rem;font-weight:800;cursor:pointer;text-align:center;min-width:64px}
+.days button small{display:block;font-weight:600;font-size:.7rem;color:var(--muted)}
+.days button.on{background:var(--accent);border-color:var(--accent);color:#fff}.days button.on small{color:#dcfce7}
+.today-card{margin-top:1rem;background:#fff;border:1px solid var(--line);border-radius:22px;padding:1.3rem;display:grid;gap:1rem}
+@media(min-width:760px){.today-card{grid-template-columns:1fr 1fr}}
+.today-card h3{font-size:1rem;margin-bottom:.5rem;color:var(--accent)}
+.today-card ul{list-style:none;display:grid;gap:.35rem}
+.today-card li{padding:.5rem .7rem;border-radius:10px;background:#f7f5ee;font-size:.92rem}
+.upd{display:flex;gap:.6rem;align-items:center;margin-top:1rem;padding:.8rem 1rem;border-radius:14px;background:#ecfdf5;border:1px dashed var(--accent);font-size:.85rem}
+.order{display:grid;gap:1.4rem}
+@media(min-width:860px){.order{grid-template-columns:1fr 1fr;align-items:start}}
+.sizes{display:grid;gap:.55rem}
+.sizes label{position:relative}
+.sizes input{position:absolute;opacity:0}
+.sizes label>span{display:flex;justify-content:space-between;align-items:center;gap:.5rem;padding:.9rem 1rem;border-radius:16px;border:1.5px solid var(--line);background:#fff;cursor:pointer}
+.sizes label>span small{display:block;color:var(--muted);font-size:.8rem}
+.sizes input:checked+span{border-color:var(--accent);box-shadow:0 0 0 3px rgba(21,128,61,.15)}
+.sizes b.p{color:var(--accent);font-size:1.05rem;white-space:nowrap}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem}
+.chips label input{position:absolute;opacity:0}
+.chips label span{display:inline-block;padding:.5rem .8rem;border-radius:999px;border:1.5px solid var(--line);background:#fff;font-size:.86rem;cursor:pointer;font-weight:600}
+.chips label input:checked+span{background:var(--accent);color:#fff;border-color:var(--accent)}
+.chips label input:disabled+span{opacity:.4;cursor:not-allowed}
+.form-card{min-width:0;background:#fff;border:1px solid var(--line);border-radius:24px;padding:1.3rem;display:grid;gap:1rem;box-shadow:0 18px 44px rgba(31,42,31,.07)}
+.lbl{font-size:.85rem;font-weight:700;margin-bottom:.4rem;display:flex;justify-content:space-between}
+.lbl small{color:var(--muted);font-weight:600}
+.qtyrow{display:flex;align-items:center;gap:.6rem}
+.qtyrow button{width:44px;height:44px;border-radius:12px;border:1.5px solid var(--line);background:#fff;font-size:1.2rem;font-weight:900;cursor:pointer}
+.qtyrow output{min-width:2rem;text-align:center;font-weight:900;font-size:1.1rem}
+.sum{display:flex;justify-content:space-between;font-weight:900;font-size:1.1rem;padding-top:.6rem;border-top:2px dashed var(--line)}
+.row2{display:grid;gap:.9rem}@media(min-width:520px){.row2{grid-template-columns:1fr 1fr}}
+.seg{display:flex;gap:.4rem}.seg label{flex:1}.seg input{position:absolute;opacity:0}
+.seg span{display:block;text-align:center;padding:.65rem;border-radius:12px;border:1.5px solid var(--line);font-weight:700;cursor:pointer;font-size:.88rem;background:#fff}
+.seg input:checked+span{background:var(--ink);color:#fff;border-color:var(--ink)}
+.biz{border-radius:26px;padding:1.6rem;background:linear-gradient(135deg,#14532d,#15803d);color:#ecfdf5;display:grid;gap:1.2rem}
+@media(min-width:860px){.biz{grid-template-columns:1fr 1fr;align-items:center}}
+.biz h2{color:#fff}.biz ul{list-style:none;display:grid;gap:.4rem;font-size:.92rem;margin-top:.6rem}
+.biz li::before{content:"✓ ";color:var(--accent2);font-weight:900}
+.biz .form-card{color:var(--ink)}
+.info{display:grid;gap:1rem}@media(min-width:760px){.info{grid-template-columns:1fr 1fr}}
+.box{background:#fff;border:1px solid var(--line);border-radius:20px;padding:1.3rem}
+
+</style>
+</head>
+<body>
+<div class="demo-banner" role="note">
+  <span>🧪 <b>Prévia demonstrativa criada por Rafael</b> — fale comigo no WhatsApp</span>
+  <a href="https://wa.me/553891556365" target="_blank" rel="noopener">💬 (38) 9155-6365</a>
+</div>
+
+<header class="nav"><div class="wrap"><a class="brand" href="#"><i>🍽</i>Restaurante Central</a><a class="btn" href="#marmitex">🍱 Pedir</a></div></header>
+<main>
+<section class="hero"><div class="wrap hero-grid">
+ <div>
+  <span class="pill">🍛 Self-service em Unaí</span>
+  <h1>Comida caseira, <span>do jeito que tem que ser.</span></h1>
+  <p class="lead">Confira o cardápio do dia e peça sua marmitex pelo WhatsApp em poucos toques — retirada no balcão ou entrega.</p>
+  <div class="cta"><a class="btn btn-green" href="#cardapio">Ver cardápio de hoje</a><a class="btn btn-wa" href="https://wa.me/5538998791734?text=Ol%C3%A1%2C%20Restaurante%20Central%21%20Vim%20pelo%20site%20e%20queria%20ver%20o%20card%C3%A1pio%20de%20hoje." target="_blank" rel="noopener"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.7l-.4-.3-3.8 1.2 1.2-3.7-.3-.4c-1.2-1.8-1.8-3.8-1.8-5.9C5 9.9 10 5.1 16 5.1s11 4.8 11 10.7-5 10.6-11 10.6zm6-7.9c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2l-1 1.3c-.2.2-.4.2-.7.1-1.9-.9-3.2-1.8-4.4-3.9-.3-.6.3-.5 1-1.8.1-.2 0-.4 0-.6l-1-2.5c-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.4-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.4 3.7 5.9 5.2 2.2.9 3 1 4.1.8.7-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.3-.3-.4-.6-.5z"/></svg> WhatsApp</a></div>
+  <div class="facts"><div><b>4,1★</b>no Google</div><div><b>257</b>avaliações</div><div><b>10h30–14h</b>seg. a sex.</div></div>
+ </div>
+ <div class="plate reveal" aria-hidden="true"><div class="food"></div><span class="tag t1">🍚 Arroz & feijão</span><span class="tag t2">🥩 Proteína do dia</span><span class="tag t3">🥗 Salada fresquinha</span></div>
+</div></section>
+
+<section class="section" id="cardapio" style="padding-top:2rem"><div class="wrap">
+ <span class="eyebrow">Cardápio do dia</span><h2 id="ttl">Hoje no Central</h2>
+ <p class="lead">Pratos <b>ilustrativos</b> <span class="tag-demo">exemplo</span>. Na versão final, o restaurante atualiza o cardápio pelo celular em 1 minuto, todo dia.</p>
+ <div class="days" id="days"></div>
+ <div class="today-card"><div><h3>🥩 Proteínas</h3><ul id="prot"></ul></div><div><h3>🍚 Acompanhamentos</h3><ul id="acomp"></ul></div></div>
+ <div class="upd">📱 <span><b>Painel do restaurante:</b> marque os pratos do dia, toque em “publicar” e o site atualiza na hora. <span class="tag-demo">versão final</span></span></div>
+</div></section>
+
+<section class="section" id="marmitex" style="padding-top:1rem"><div class="wrap order">
+ <div><span class="eyebrow">Marmitex</span><h2>Monte sua marmitex</h2>
+  <p class="lead">Escolha o tamanho, a proteína e os acompanhamentos. O pedido chega prontinho no WhatsApp do restaurante.</p>
+  <p class="note">Tamanhos e preços <b>ilustrativos</b>.</p></div>
+ <form class="form-card" id="mxForm" novalidate>
+  <div><div class="lbl">1. Tamanho</div><div class="sizes"><label><input type="radio" name="size" value="P" ><span><span><b>Marmitex P</b><small>1 proteína + 3 acompanhamentos</small></span><b class="p">R$ 18,00</b></span></label><label><input type="radio" name="size" value="M" checked><span><span><b>Marmitex M</b><small>1 proteína + 4 acompanhamentos</small></span><b class="p">R$ 22,00</b></span></label><label><input type="radio" name="size" value="G" ><span><span><b>Marmitex G</b><small>2 proteínas + 5 acompanhamentos</small></span><b class="p">R$ 27,00</b></span></label></div></div>
+  <div><div class="lbl">2. Proteína <small id="protHint">escolha 1</small></div><div class="chips" id="protC"></div></div>
+  <div><div class="lbl">3. Acompanhamentos <small id="acHint">até 4</small></div><div class="chips" id="acC"></div></div>
+  <div><div class="lbl">4. Quantidade</div><div class="qtyrow"><button type="button" id="qm">−</button><output id="qv">1</output><button type="button" id="qp">+</button></div></div>
+  <div class="seg"><label><input type="radio" name="mode" value="Retirada" checked><span>🏃 Retirar no balcão</span></label><label><input type="radio" name="mode" value="Entrega"><span>🛵 Entrega</span></label></div>
+  <div class="row2"><div class="field"><label for="mn">Nome</label><input id="mn" autocomplete="name" placeholder="Seu nome"></div>
+  <div class="field"><label for="mh">Horário</label><select id="mh"><option>11:00</option><option>11:30</option><option selected>12:00</option><option>12:30</option><option>13:00</option><option>13:30</option></select></div></div>
+  <div class="field" id="maF" hidden><label for="ma">Endereço</label><input id="ma" placeholder="Rua, número, empresa/sala"></div>
+  <div class="sum"><span>Total</span><span id="msum">R$ 22,00</span></div>
+  <button class="btn btn-wa" type="submit"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.7l-.4-.3-3.8 1.2 1.2-3.7-.3-.4c-1.2-1.8-1.8-3.8-1.8-5.9C5 9.9 10 5.1 16 5.1s11 4.8 11 10.7-5 10.6-11 10.6zm6-7.9c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2l-1 1.3c-.2.2-.4.2-.7.1-1.9-.9-3.2-1.8-4.4-3.9-.3-.6.3-.5 1-1.8.1-.2 0-.4 0-.6l-1-2.5c-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.4-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.4 3.7 5.9 5.2 2.2.9 3 1 4.1.8.7-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.3-.3-.4-.6-.5z"/></svg> Pedir pelo WhatsApp</button>
+ </form>
+</div></section>
+
+<section class="section" style="padding-top:1rem"><div class="wrap biz">
+ <div><span class="eyebrow" style="color:var(--accent2)">Para empresas</span><h2>Almoço da equipe sem dor de cabeça</h2>
+  <p>Cadastre sua empresa e faça pedidos coletivos de marmitex com entrega no horário combinado.</p>
+  <ul><li>Lista de funcionários e pedidos do dia</li><li>Fechamento semanal ou mensal</li><li>Lembrete do cardápio no WhatsApp às 10h</li></ul>
+  <p class="note" style="color:#bbf7d0">Condições ilustrativas — definidas pelo restaurante.</p></div>
+ <form class="form-card" id="bzForm" novalidate>
+  <div class="field"><label for="be">Empresa</label><input id="be" placeholder="Nome da empresa"></div>
+  <div class="row2"><div class="field"><label for="bc">Responsável</label><input id="bc" placeholder="Nome"></div>
+  <div class="field"><label for="bq">Marmitas por dia (aprox.)</label><input id="bq" type="number" min="1" inputmode="numeric" placeholder="10"></div></div>
+  <button class="btn btn-green" type="submit">Cadastrar empresa via WhatsApp</button>
+ </form>
+</div></section>
+
+<section class="section" style="padding-top:1rem"><div class="wrap info">
+ <div class="box"><h3 style="margin-bottom:.5rem">Horário</h3><table class="hours"><tr data-day="1"><td>Segunda</td><td>10:30 – 14:00</td></tr><tr data-day="2"><td>Terça</td><td>10:30 – 14:00</td></tr><tr data-day="3"><td>Quarta</td><td>10:30 – 14:00</td></tr><tr data-day="4"><td>Quinta</td><td>10:30 – 14:00</td></tr><tr data-day="5"><td>Sexta</td><td>10:30 – 14:00</td></tr><tr data-day="6"><td>Sábado</td><td>Fechado</td></tr><tr data-day="0"><td>Domingo</td><td>Fechado</td></tr></table><p class="note">Conforme ficha pública do Google; confirmar com o restaurante.</p></div>
+ <div class="box"><h3 style="margin-bottom:.5rem">Onde estamos</h3><p>📍 R. Alba Gonzaga, 683 – Unaí – MG, 38610-021</p><p style="margin-top:.4rem">📞 (38) 99879-1734 · (38) 3676-2731</p>
+  <a class="btn btn-out" style="margin-top:1rem" href="https://www.google.com/maps/search/?api=1&query=Restaurante%20Central%20R.%20Alba%20Gonzaga%20683%20Una%C3%AD" target="_blank" rel="noopener">🗺️ Como chegar</a></div>
+</div></section>
+</main>
+<footer class="site-footer"><div class="wrap">
+  <p><b>Restaurante Central</b> · R. Alba Gonzaga, 683 – Unaí – MG, 38610-021 · (38) 99879-1734 · (38) 3676-2731</p>
+  
+  <div class="credit">Esta é uma <b>prévia demonstrativa</b> feita por Rafael para apresentar uma ideia de site. Textos de exemplo, preços, itens, nomes e fotos são <b>ilustrativos</b> (fotos: Unsplash, licença livre). Nome, endereço, telefone, horários e nota do Google vêm de fontes públicas. Não é o site oficial do estabelecimento.<br>
+  Gostou? Fale comigo no WhatsApp: <a href="https://wa.me/553891556365" target="_blank" rel="noopener">(38) 9155-6365</a> · <a href="https://rafaelytofc7-spec.github.io/gateway-ia/" target="_blank" rel="noopener">veja o portfólio do Rafael</a>.</div>
+</div></footer>
+<a class="fab-wa" href="https://wa.me/5538998791734?text=Ol%C3%A1%2C%20Restaurante%20Central%21%20Vim%20pelo%20site%20e%20queria%20ver%20o%20card%C3%A1pio%20de%20hoje." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.7l-.4-.3-3.8 1.2 1.2-3.7-.3-.4c-1.2-1.8-1.8-3.8-1.8-5.9C5 9.9 10 5.1 16 5.1s11 4.8 11 10.7-5 10.6-11 10.6zm6-7.9c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2l-1 1.3c-.2.2-.4.2-.7.1-1.9-.9-3.2-1.8-4.4-3.9-.3-.6.3-.5 1-1.8.1-.2 0-.4 0-.6l-1-2.5c-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.4-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.4 3.7 5.9 5.2 2.2.9 3 1 4.1.8.7-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.3-.3-.4-.6-.5z"/></svg></a>
+<script>
+
+function waOpen(phone,text){window.open('https://wa.me/'+phone+'?text='+encodeURIComponent(text),'_blank','noopener');}
+function toast(msg){let t=document.querySelector('.toast');if(!t){t=document.createElement('div');t.className='toast';document.body.appendChild(t);}t.textContent=msg;t.classList.add('show');clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove('show'),2200);}
+(function(){const io='IntersectionObserver' in window?new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12}):null;
+document.querySelectorAll('.reveal').forEach(el=>io?io.observe(el):el.classList.add('in'));
+const d=new Date().getDay();document.querySelectorAll('.hours tr[data-day]').forEach(tr=>{if(+tr.dataset.day===d)tr.classList.add('today');});})();
+
+const PHONE='5538998791734';const MENU={"1": {"prot": ["Frango assado", "Carne de panela", "Omelete de legumes"], "acomp": ["Arroz branco", "Feijão carioca", "Macarrão alho e óleo", "Farofa da casa", "Legumes refogados", "Salada verde"]}, "2": {"prot": ["Bife acebolado", "Frango ao molho", "Linguiça assada"], "acomp": ["Arroz branco", "Feijão tropeiro", "Purê de batata", "Couve refogada", "Vinagrete", "Salada de alface e tomate"]}, "3": {"prot": ["Feijoada (dia especial)", "Frango grelhado", "Ovo frito"], "acomp": ["Arroz branco", "Couve refogada", "Farofa", "Laranja", "Torresmo", "Salada verde"]}, "4": {"prot": ["Costelinha suína", "Frango caipira", "Almôndegas ao sugo"], "acomp": ["Arroz branco", "Feijão carioca", "Mandioca cozida", "Angu", "Quiabo refogado", "Salada de repolho"]}, "5": {"prot": ["Peixe frito", "Carne moída com batata", "Frango à milanesa"], "acomp": ["Arroz branco", "Feijão carioca", "Macarronada", "Batata frita", "Legumes no vapor", "Salada mista"]}};
+const SIZES={"P": ["Marmitex P", 18.0, 1, 3], "M": ["Marmitex M", 22.0, 1, 4], "G": ["Marmitex G", 27.0, 2, 5]};
+const DN=['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'],DL=['domingo','segunda','terça','quarta','quinta','sexta','sábado'];
+let today=new Date().getDay();let sel=(today>=1&&today<=5)?today:1;let qty=1;
+const daysEl=document.getElementById('days');
+function dateFor(d){const n=new Date();const diff=d-n.getDay();n.setDate(n.getDate()+diff);return n.toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit'});}
+[1,2,3,4,5].forEach(d=>{const b=document.createElement('button');b.type='button';b.innerHTML=DN[d]+'<small>'+(d===today?'hoje':dateFor(d))+'</small>';b.dataset.d=d;b.onclick=()=>{sel=d;draw();};daysEl.appendChild(b);});
+function chips(el,list,name,type){el.innerHTML=list.map((x,i)=>`<label><input type="${type}" name="${name}" value="${x}" ${i===0&&type==='radio'?'checked':''}><span>${x}</span></label>`).join('');}
+function limits(){const s=SIZES[document.querySelector('input[name=size]:checked').value];
+ const maxP=s[2],maxA=s[3];document.getElementById('protHint').textContent='escolha até '+maxP;document.getElementById('acHint').textContent='até '+maxA;
+ [['prot',maxP],['ac',maxA]].forEach(([n,mx])=>{const all=[...document.querySelectorAll(`input[name=${n}]`)];let c=all.filter(i=>i.checked);while(c.length>mx){c.pop().checked=false;c=all.filter(i=>i.checked);}all.forEach(i=>i.disabled=!i.checked&&c.length>=mx);});
+ document.getElementById('msum').textContent='R$ '+(s[1]*qty).toFixed(2).replace('.',',');}
+function draw(){[...daysEl.children].forEach(b=>b.classList.toggle('on',+b.dataset.d===sel));const m=MENU[sel];
+ document.getElementById('ttl').textContent=sel===today?'Hoje no Central':'Cardápio de '+DL[sel];
+ document.getElementById('prot').innerHTML=m.prot.map(x=>'<li>'+x+'</li>').join('');document.getElementById('acomp').innerHTML=m.acomp.map(x=>'<li>'+x+'</li>').join('');
+ chips(document.getElementById('protC'),m.prot,'prot','checkbox');chips(document.getElementById('acC'),m.acomp,'ac','checkbox');
+ document.querySelector('input[name=prot]').checked=true;document.querySelectorAll('input[name=ac]').forEach((i,k)=>i.checked=k<3);
+ document.querySelectorAll('#protC input,#acC input').forEach(i=>i.onchange=limits);limits();}
+document.querySelectorAll('input[name=size]').forEach(r=>r.onchange=limits);
+document.getElementById('qm').onclick=()=>{qty=Math.max(1,qty-1);document.getElementById('qv').textContent=qty;limits();};
+document.getElementById('qp').onclick=()=>{qty=Math.min(30,qty+1);document.getElementById('qv').textContent=qty;limits();};
+document.querySelectorAll('input[name=mode]').forEach(r=>r.onchange=()=>document.getElementById('maF').hidden=document.querySelector('input[name=mode]:checked').value!=='Entrega');
+document.getElementById('mxForm').addEventListener('submit',e=>{e.preventDefault();const nm=document.getElementById('mn');if(!nm.value.trim()){nm.focus();toast('Informe seu nome');return;}
+ const k=document.querySelector('input[name=size]:checked').value,s=SIZES[k];const pr=[...document.querySelectorAll('input[name=prot]:checked')].map(i=>i.value);
+ const ac=[...document.querySelectorAll('input[name=ac]:checked')].map(i=>i.value);if(!pr.length){toast('Escolha a proteína');return;}
+ const mode=document.querySelector('input[name=mode]:checked').value;const ad=document.getElementById('ma').value.trim();if(mode==='Entrega'&&!ad){document.getElementById('ma').focus();toast('Informe o endereço');return;}
+ const msg=`🍽️ *Pedido de marmitex — Restaurante Central*\n\n*${qty}x ${s[0]}* (cardápio de ${DL[sel]})\n🥩 ${pr.join(', ')}\n🍚 ${ac.join(', ')||'-'}\n\n*Total:* R$ ${(s[1]*qty).toFixed(2).replace('.',',')}\n*Nome:* ${nm.value.trim()}\n*${mode}* às ${document.getElementById('mh').value}${mode==='Entrega'?' — '+ad:''}\n\n(Pedido feito pelo site)`;
+ waOpen(PHONE,msg);});
+document.getElementById('bzForm').addEventListener('submit',e=>{e.preventDefault();const g=id=>document.getElementById(id).value.trim();if(!g('be')){document.getElementById('be').focus();toast('Informe a empresa');return;}
+ waOpen(PHONE,`Olá, Restaurante Central! Quero cadastrar minha empresa para pedidos de marmitex.\n\n🏢 Empresa: ${g('be')}\n👤 Responsável: ${g('bc')||'-'}\n🍱 Marmitas/dia: ${g('bq')||'-'}\n\n(Enviado pelo site)`);});
+draw();
+</script></body></html>

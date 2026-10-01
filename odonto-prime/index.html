@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1e3a8a">
+<title>Odonto Prime — Dentista em Paracatu (prévia)</title>
+<meta name="description" content="Odonto Prime, clínica odontológica em Paracatu-MG. Prévia demonstrativa.">
+<style>
+
+*{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.5;color:var(--ink);background:var(--bg);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+.wrap{width:min(1120px,100% - 2.5rem);margin-inline:auto}
+.demo-banner{position:relative;z-index:60;display:flex;gap:.5rem 1rem;flex-wrap:wrap;align-items:center;justify-content:center;
+  padding:.45rem .9rem;background:#111827;color:#f9fafb;font-size:.78rem;text-align:center;border-bottom:2px solid #facc15}
+.demo-banner a{color:#facc15;font-weight:700;text-decoration:none;white-space:nowrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.85rem 1.25rem;border-radius:999px;border:0;cursor:pointer;
+  font-weight:700;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease,background .15s;min-height:48px}
+.btn:active{transform:scale(.97)}
+.btn-wa{background:#25d366;color:#06381b}
+.btn-wa:hover{box-shadow:0 8px 24px rgba(37,211,102,.35)}
+.btn svg{width:20px;height:20px;flex:none}
+.section{padding:4rem 0}
+.eyebrow{display:inline-block;font-size:.75rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:.5rem}
+h1,h2,h3{line-height:1.15}
+h2{font-size:clamp(1.6rem,4.5vw,2.4rem);margin-bottom:.75rem}
+.lead{color:var(--muted);max-width:60ch}
+.grid{display:grid;gap:1rem}
+.note{font-size:.78rem;color:var(--muted);margin-top:.9rem}
+.tag-demo{display:inline-block;font-size:.65rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;padding:.15rem .45rem;border-radius:6px;background:#fef3c7;color:#92400e;vertical-align:middle}
+.field{display:grid;gap:.35rem}
+.field label{font-size:.85rem;font-weight:600}
+.field input,.field select,.field textarea{width:100%;padding:.8rem .9rem;border-radius:12px;border:1.5px solid var(--line);background:var(--field,#fff);min-height:48px}
+.field input:focus,.field select:focus,.field textarea:focus{outline:3px solid color-mix(in srgb,var(--accent) 35%,transparent);border-color:var(--accent)}
+.fab-wa{position:fixed;right:1rem;bottom:1rem;z-index:50;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;
+  box-shadow:0 10px 30px rgba(0,0,0,.25);text-decoration:none}
+.fab-wa svg{width:30px;height:30px;fill:#fff}
+.hours{width:100%;border-collapse:collapse;font-size:.92rem}
+.hours td{padding:.45rem 0;border-bottom:1px dashed var(--line)}
+.hours td:last-child{text-align:right;font-weight:600}
+.hours tr.today td{color:var(--accent);font-weight:800}
+.site-footer{padding:2.5rem 0 6rem;font-size:.85rem;color:var(--muted);border-top:1px solid var(--line)}
+.site-footer .credit{margin-top:1rem;padding:.8rem 1rem;border-radius:12px;background:color-mix(in srgb,var(--accent) 8%,transparent)}
+.site-footer .credit a{color:var(--accent);font-weight:700}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+.periods label,.seg label,.chips label,.sizes label{position:relative}
+.periods input,.seg input,.chips input,.sizes input{left:0;top:0;width:1px;height:1px;pointer-events:none}
+.sched-wrap>*,.order>*,.enroll>*,.booking>*,.info>*,.app>*,.hero-grid>*,.biz>*,.grid>*{min-width:0}
+.toast{position:fixed;left:50%;bottom:5.5rem;transform:translateX(-50%) translateY(20px);background:#111827;color:#fff;padding:.7rem 1rem;border-radius:12px;
+  font-size:.9rem;opacity:0;pointer-events:none;transition:.25s;z-index:80;max-width:90vw;text-align:center}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+
+:root{--bg:#f8f7f4;--ink:#0f1b2d;--muted:#5b6577;--accent:#1e3a8a;--accent2:#b08d57;--line:#e4e1d8;--card:#fff}
+.nav{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:.6rem;font-weight:800;font-size:1.1rem;text-decoration:none}
+.logo-mark{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,var(--accent),var(--accent2));font-size:.85rem;letter-spacing:.02em}
+.nav-links{display:none;gap:1.4rem;font-size:.92rem;font-weight:600}
+.nav-links a{text-decoration:none;opacity:.8} .nav-links a:hover{opacity:1;color:var(--accent)}
+.nav .btn{padding:.55rem 1rem;min-height:40px;font-size:.88rem;background:var(--accent);color:#fff}
+@media(min-width:860px){.nav-links{display:flex}}
+.hero{position:relative;padding:2.5rem 0 3rem;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:-30% -20% auto auto;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--accent2) 30%,transparent),transparent 70%);z-index:-1}
+.hero-grid{display:grid;gap:2rem;align-items:center}
+@media(min-width:860px){.hero-grid{grid-template-columns:1.1fr .9fr}.hero{padding:4.5rem 0}}
+.rating{display:inline-flex;align-items:center;gap:.5rem;padding:.4rem .8rem;border-radius:999px;background:var(--card);border:1px solid var(--line);font-size:.85rem;font-weight:600;box-shadow:0 4px 14px rgba(0,0,0,.05)}
+.stars{color:#f59e0b;letter-spacing:1px}
+.hero h1{font-size:clamp(2rem,7.5vw,3.5rem);margin:1rem 0 .8rem;letter-spacing:-.02em}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .cta{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.5rem}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:0 10px 24px color-mix(in srgb,var(--accent) 35%,transparent)}
+.btn-ghost{background:var(--card);border:1.5px solid var(--line)}
+.hero-media{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:4/3.4;box-shadow:0 30px 60px rgba(0,0,0,.15)}
+.hero-media img{width:100%;height:100%;object-fit:cover}
+.hero-media .chip{position:absolute;left:1rem;bottom:1rem;background:#fff;border-radius:16px;padding:.7rem .9rem;display:flex;gap:.6rem;align-items:center;font-size:.85rem;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.chip b{display:block}
+.quick{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin-top:1.6rem}
+.quick div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:.8rem;text-align:center;font-size:.78rem;color:var(--muted)}
+.quick b{display:block;font-size:1.05rem;color:var(--ink)}
+.spec-grid{grid-template-columns:repeat(auto-fill,minmax(240px,1fr));margin-top:1.8rem}
+.spec{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:1.4rem;transition:.2s;position:relative}
+.spec:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(0,0,0,.08)}
+.spec .ico{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;font-size:1.6rem;background:color-mix(in srgb,var(--accent) 12%,#fff);margin-bottom:.9rem}
+.spec h3{font-size:1.1rem;margin-bottom:.35rem}
+.spec p{font-size:.92rem;color:var(--muted)}
+.spec.star{border:2px solid var(--accent)}
+.spec .badge{position:absolute;top:1rem;right:1rem;font-size:.68rem;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:.05em}
+.alt{background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 6%,var(--bg)),var(--bg))}
+.team-grid{grid-template-columns:repeat(auto-fill,minmax(220px,1fr));margin-top:1.8rem}
+.member{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:1.4rem;text-align:center}
+.avatar{width:96px;height:96px;margin:0 auto .9rem;border-radius:50%;display:grid;place-items:center;font-size:2.2rem;color:#fff;background:linear-gradient(135deg,var(--accent),var(--accent2));border:4px solid #fff;box-shadow:0 8px 22px rgba(0,0,0,.12)}
+.member small{display:block;color:var(--muted)}
+.steps{grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:1.5rem;counter-reset:s}
+.step{padding:1.2rem;border-radius:18px;background:var(--card);border:1px solid var(--line)}
+.step::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;margin-bottom:.6rem}
+.booking{display:grid;gap:1.5rem}
+@media(min-width:860px){.booking{grid-template-columns:.9fr 1.1fr;align-items:start}}
+.form-card{background:var(--card);border-radius:24px;padding:1.4rem;border:1px solid var(--line);box-shadow:0 20px 50px rgba(0,0,0,.07);display:grid;gap:.9rem}
+.row2{display:grid;gap:.9rem} @media(min-width:520px){.row2{grid-template-columns:1fr 1fr}}
+.periods{display:flex;gap:.5rem;flex-wrap:wrap}
+.periods label{flex:1;min-width:90px}
+.periods input{position:absolute;opacity:0}
+.periods span{display:block;text-align:center;padding:.7rem;border-radius:12px;border:1.5px solid var(--line);cursor:pointer;font-weight:600;font-size:.9rem}
+.periods input:checked+span{background:var(--accent);border-color:var(--accent);color:#fff}
+.testi{grid-template-columns:repeat(auto-fill,minmax(260px,1fr));margin-top:1.5rem}
+.testi blockquote{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:1.2rem;font-size:.95rem}
+.testi cite{display:block;margin-top:.6rem;font-size:.8rem;color:var(--muted);font-style:normal}
+.info{display:grid;gap:1rem} @media(min-width:860px){.info{grid-template-columns:1fr 1fr}}
+.info-card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:1.4rem}
+.map-ph{margin-top:1rem;border-radius:16px;height:170px;display:grid;place-items:center;text-decoration:none;font-weight:700;color:var(--accent);
+  background:repeating-linear-gradient(45deg,color-mix(in srgb,var(--accent) 7%,#fff) 0 14px,#fff 14px 28px);border:1px dashed var(--accent)}
+details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1rem 1.1rem;margin-top:.6rem}
+summary{cursor:pointer;font-weight:700}
+details p{margin-top:.5rem;color:var(--muted);font-size:.93rem}
+
+</style>
+</head>
+<body>
+<div class="demo-banner" role="note">
+  <span>🧪 <b>Prévia demonstrativa criada por Rafael</b> — fale comigo no WhatsApp</span>
+  <a href="https://wa.me/553891556365" target="_blank" rel="noopener">💬 (38) 9155-6365</a>
+</div>
+
+<header class="nav"><div class="wrap">
+  <a class="logo" href="#"><span class="logo-mark">OP</span>Odonto Prime</a>
+  <nav class="nav-links"><a href="#especialidades">Especialidades</a><a href="#equipe">Equipe</a><a href="#agendar">Agendar</a><a href="#contato">Contato</a></nav>
+  <a class="btn" href="#agendar">Agendar</a>
+</div></header>
+<main>
+<section class="hero"><div class="wrap hero-grid">
+  <div>
+    <span class="rating"><span class="stars">★★★★★</span> 4,9 no Google · 36 avaliações</span>
+    <h1>Seu dentista em Paracatu, com <em>padrão prime</em>.</h1>
+    <p class="lead">Tratamentos odontológicos completos, ambiente moderno e agendamento de avaliação direto pelo celular.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="#agendar">📅 Agendar avaliação</a>
+      <a class="btn btn-wa" href="https://wa.me/5538998092104?text=Ol%C3%A1%2C%20Odonto%20Prime%21%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.7l-.4-.3-3.8 1.2 1.2-3.7-.3-.4c-1.2-1.8-1.8-3.8-1.8-5.9C5 9.9 10 5.1 16 5.1s11 4.8 11 10.7-5 10.6-11 10.6zm6-7.9c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2l-1 1.3c-.2.2-.4.2-.7.1-1.9-.9-3.2-1.8-4.4-3.9-.3-.6.3-.5 1-1.8.1-.2 0-.4 0-.6l-1-2.5c-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.4-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.4 3.7 5.9 5.2 2.2.9 3 1 4.1.8.7-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.3-.3-.4-.6-.5z"/></svg> WhatsApp</a>
+    </div>
+    <div class="quick"><div><b>4,9★</b>nota no Google</div><div><b>36</b>avaliações</div><div><b>Paracatu</b>MG</div></div>
+  </div>
+  <div class="hero-media reveal">
+    <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1000&q=70&auto=format" alt="Imagem ilustrativa de atendimento odontológico (Unsplash)" loading="eager">
+    <div class="chip"><span style="font-size:1.5rem">🦷</span><div><b>Avaliação agendada online</b>Confirmação pelo WhatsApp</div></div>
+  </div>
+</div></section>
+
+<section class="section" id="especialidades"><div class="wrap">
+  <span class="eyebrow">Especialidades</span>
+  <h2>Especialidades</h2>
+  <p class="lead">Exemplos de tratamentos — cada um pode ter uma página própria para quem busca “dentista em Paracatu” no Google.</p>
+  <div class="grid spec-grid"><article class="spec reveal"><div class="ico">🦷</div><h3>Implantes dentários</h3><p>Reposição de dentes com segurança e planejamento digital.</p></article><article class="spec reveal"><div class="ico">✨</div><h3>Clareamento e estética</h3><p>Clareamento, facetas e lentes para um sorriso mais bonito.</p></article><article class="spec reveal"><div class="ico">😁</div><h3>Ortodontia e alinhadores</h3><p>Aparelhos fixos e alinhadores transparentes.</p></article><article class="spec reveal"><div class="ico">🪥</div><h3>Clínico geral</h3><p>Limpeza, restaurações, prevenção e check-up.</p></article><article class="spec reveal"><div class="ico">🩺</div><h3>Endodontia</h3><p>Tratamento de canal com conforto.</p></article><article class="spec reveal"><div class="ico">👶</div><h3>Odontopediatria</h3><p>Cuidado especial para os pequenos.</p></article></div>
+  <p class="note">Lista ilustrativa: as especialidades reais serão confirmadas com a clínica.</p>
+</div></section>
+
+<section class="section alt" id="equipe"><div class="wrap">
+  <span class="eyebrow">Equipe</span>
+  <h2>Quem cuida do seu sorriso</h2>
+  <p class="lead">Espaço para foto, nome, CRO e especialidade de cada profissional. <span class="tag-demo">nomes e fotos a definir</span></p>
+  <div class="grid team-grid"><article class="member reveal"><div class="avatar">👨‍⚕️</div><h3>Dr. Nome Sobrenome</h3><small>Responsável técnico</small><small>CRO-MG 00000 <span class="tag-demo">exemplo</span></small></article><article class="member reveal"><div class="avatar">👩‍⚕️</div><h3>Dra. Nome Sobrenome</h3><small>Especialidade</small><small>CRO-MG 00000 <span class="tag-demo">exemplo</span></small></article><article class="member reveal"><div class="avatar">🧑‍💼</div><h3>Recepção</h3><small>Atendimento e agendamentos</small><small>CRO-MG 00000 <span class="tag-demo">exemplo</span></small></article></div>
+</div></section>
+
+<section class="section" id="agendar"><div class="wrap booking">
+  <div>
+    <span class="eyebrow">Agendamento online</span>
+    <h2>Marque sua avaliação em 1 minuto</h2>
+    <p class="lead">O paciente preenche o formulário e o pedido chega organizado no WhatsApp da clínica. A recepção só confirma o horário.</p>
+    <div class="grid steps"><div class="step"><b>Escolha</b><br><small>especialidade, dia e período</small></div><div class="step"><b>Envie</b><br><small>abre o WhatsApp com tudo preenchido</small></div><div class="step"><b>Confirme</b><br><small>a clínica responde com o horário</small></div></div>
+  </div>
+  <form class="form-card" id="bookForm" novalidate>
+    <div class="field"><label for="nome">Nome completo</label><input id="nome" name="nome" required autocomplete="name" placeholder="Seu nome"></div>
+    <div class="row2">
+      <div class="field"><label for="tel">Telefone</label><input id="tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="(38) 9 0000-0000"></div>
+      <div class="field"><label for="para">Para quem?</label><select id="para"><option>Para mim</option><option>Para meu filho(a)</option><option>Outra pessoa</option></select></div>
+    </div>
+    <div class="field"><label for="esp">Especialidade</label><select id="esp"><option>Implantes dentários</option><option>Clareamento e estética</option><option>Ortodontia e alinhadores</option><option>Clínico geral</option><option>Endodontia</option><option>Odontopediatria</option><option>Não sei / avaliação geral</option></select></div>
+    <div class="row2">
+      <div class="field"><label for="data">Data preferida</label><input id="data" type="date"></div>
+      <div class="field"><label>Período</label><div class="periods">
+        <label><input type="radio" name="per" value="Manhã" checked><span>Manhã</span></label>
+        <label><input type="radio" name="per" value="Tarde"><span>Tarde</span></label></div></div>
+    </div>
+    <div class="field"><label for="obs">Observações (opcional)</label><textarea id="obs" rows="2" placeholder="Ex.: sinto dor ao mastigar"></textarea></div>
+    <button class="btn btn-wa" type="submit"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.7l-.4-.3-3.8 1.2 1.2-3.7-.3-.4c-1.2-1.8-1.8-3.8-1.8-5.9C5 9.9 10 5.1 16 5.1s11 4.8 11 10.7-5 10.6-11 10.6zm6-7.9c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2l-1 1.3c-.2.2-.4.2-.7.1-1.9-.9-3.2-1.8-4.4-3.9-.3-.6.3-.5 1-1.8.1-.2 0-.4 0-.6l-1-2.5c-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.4-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.4 3.7 5.9 5.2 2.2.9 3 1 4.1.8.7-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.3-.3-.4-.6-.5z"/></svg> Enviar pedido pelo WhatsApp</button>
+    <p class="note" style="margin:0">Na versão final: confirmação automática, lembrete na véspera e painel da recepção.</p>
+  </form>
+</div></section>
+
+<section class="section alt"><div class="wrap">
+  <span class="eyebrow">Depoimentos</span>
+  <h2>Nota 4,9 no Google</h2>
+  <p class="lead">Na versão final, as avaliações reais do Google podem aparecer aqui (com autorização). Abaixo, textos de exemplo:</p>
+  <div class="grid testi">
+    <blockquote class="reveal">“Atendimento atencioso do início ao fim. Recomendo!”<cite>Paciente — exemplo ilustrativo</cite></blockquote>
+    <blockquote class="reveal">“Consegui marcar pelo celular em poucos minutos.”<cite>Paciente — exemplo ilustrativo</cite></blockquote>
+    <blockquote class="reveal">“Clínica organizada e equipe muito cuidadosa.”<cite>Paciente — exemplo ilustrativo</cite></blockquote>
+  </div>
+</div></section>
+
+<section class="section" id="contato"><div class="wrap">
+  <span class="eyebrow">Onde estamos</span>
+  <h2>Visite a Odonto Prime</h2>
+  <div class="info">
+    <div class="info-card">
+      <p>📍 <b>R. Benedito Laboissere, 175 – Paracatu – MG, 38600-190</b></p>
+      <p>📞 (38) 99809-2104</p>
+      <a class="map-ph" href="https://www.google.com/maps/search/?api=1&query=Odonto%20Prime%20R.%20Benedito%20Laboissere%20175%20Paracatu" target="_blank" rel="noopener">🗺️ Abrir no Google Maps</a>
+    </div>
+    <div class="info-card"><h3 style="margin-bottom:.6rem">Horário de atendimento</h3><table class="hours"><tr data-day="1"><td>Segunda</td><td>08:00 – 18:00</td></tr><tr data-day="2"><td>Terça</td><td>08:00 – 18:00</td></tr><tr data-day="3"><td>Quarta</td><td>08:00 – 18:00</td></tr><tr data-day="4"><td>Quinta</td><td>08:00 – 18:00</td></tr><tr data-day="5"><td>Sexta</td><td>08:00 – 18:00</td></tr><tr data-day="6"><td>Sábado</td><td>Fechado</td></tr><tr data-day="0"><td>Domingo</td><td>Fechado</td></tr></table><p class="note">Horários conforme ficha pública do Google; confirmar com a clínica.</p></div>
+  </div>
+  <div style="margin-top:2rem">
+    <h3>Perguntas frequentes <span class="tag-demo">exemplo</span></h3>
+    <details><summary>Vocês atendem crianças?</summary><p>Texto de exemplo: a clínica informaria aqui se atende crianças e a partir de qual idade.</p></details>
+    <details><summary>Quanto custa a avaliação?</summary><p>Texto de exemplo: valores e convênios aceitos seriam informados aqui pela clínica.</p></details>
+    <details><summary>Atendem emergência?</summary><p>Texto de exemplo: orientações de urgência e contato direto pelo WhatsApp.</p></details>
+  </div>
+</div></section>
+</main>
+<footer class="site-footer"><div class="wrap">
+  <p><b>Odonto Prime</b> · R. Benedito Laboissere, 175 – Paracatu – MG, 38600-190 · (38) 99809-2104</p>
+  
+  <div class="credit">Esta é uma <b>prévia demonstrativa</b> feita por Rafael para apresentar uma ideia de site. Textos de exemplo, preços, itens, nomes e fotos são <b>ilustrativos</b> (fotos: Unsplash, licença livre). Nome, endereço, telefone, horários e nota do Google vêm de fontes públicas. Não é o site oficial do estabelecimento.<br>
+  Gostou? Fale comigo no WhatsApp: <a href="https://wa.me/553891556365" target="_blank" rel="noopener">(38) 9155-6365</a> · <a href="https://rafaelytofc7-spec.github.io/gateway-ia/" target="_blank" rel="noopener">veja o portfólio do Rafael</a>.</div>
+</div></footer>
+<a class="fab-wa" href="https://wa.me/5538998092104?text=Ol%C3%A1%2C%20Odonto%20Prime%21%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.7l-.4-.3-3.8 1.2 1.2-3.7-.3-.4c-1.2-1.8-1.8-3.8-1.8-5.9C5 9.9 10 5.1 16 5.1s11 4.8 11 10.7-5 10.6-11 10.6zm6-7.9c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2l-1 1.3c-.2.2-.4.2-.7.1-1.9-.9-3.2-1.8-4.4-3.9-.3-.6.3-.5 1-1.8.1-.2 0-.4 0-.6l-1-2.5c-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.4-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.4 3.7 5.9 5.2 2.2.9 3 1 4.1.8.7-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.3-.3-.4-.6-.5z"/></svg></a>
+<script>
+
+function waOpen(phone,text){window.open('https://wa.me/'+phone+'?text='+encodeURIComponent(text),'_blank','noopener');}
+function toast(msg){let t=document.querySelector('.toast');if(!t){t=document.createElement('div');t.className='toast';document.body.appendChild(t);}t.textContent=msg;t.classList.add('show');clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove('show'),2200);}
+(function(){const io='IntersectionObserver' in window?new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12}):null;
+document.querySelectorAll('.reveal').forEach(el=>io?io.observe(el):el.classList.add('in'));
+const d=new Date().getDay();document.querySelectorAll('.hours tr[data-day]').forEach(tr=>{if(+tr.dataset.day===d)tr.classList.add('today');});})();
+
+const PHONE='5538998092104';
+const d=document.getElementById('data');const iso=x=>x.getFullYear()+'-'+String(x.getMonth()+1).padStart(2,'0')+'-'+String(x.getDate()).padStart(2,'0');const t=new Date();d.min=iso(t);t.setDate(t.getDate()+1);d.value=iso(t);
+document.getElementById('bookForm').addEventListener('submit',e=>{e.preventDefault();
+ const nome=document.getElementById('nome');if(!nome.value.trim()){nome.focus();toast('Informe seu nome 🙂');return;}
+ const per=document.querySelector('input[name=per]:checked').value;
+ const dt=d.value?d.value.split('-').reverse().join('/'):'a combinar';
+ const msg=`Olá, Odonto Prime! Gostaria de agendar uma avaliação.\n\n👤 Nome: ${nome.value.trim()}\n📞 Telefone: ${document.getElementById('tel').value||'-'}\n👥 Paciente: ${document.getElementById('para').value}\n🦷 Especialidade: ${document.getElementById('esp').value}\n📅 Data preferida: ${dt} (${per})\n📝 Obs.: ${document.getElementById('obs').value||'-'}\n\n(Enviado pelo site)`;
+ waOpen(PHONE,msg);});
+</script>
+</body></html>

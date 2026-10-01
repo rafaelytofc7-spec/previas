@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#3b2414">
+<title>Hamburgueria do Sheriff — Cardápio online (prévia)</title>
+<meta name="description" content="Cardápio digital da Hamburgueria do Sheriff, Paracatu-MG. Prévia demonstrativa.">
+<style>
+
+*{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.5;color:var(--ink);background:var(--bg);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+.wrap{width:min(1120px,100% - 2.5rem);margin-inline:auto}
+.demo-banner{position:relative;z-index:60;display:flex;gap:.5rem 1rem;flex-wrap:wrap;align-items:center;justify-content:center;
+  padding:.45rem .9rem;background:#111827;color:#f9fafb;font-size:.78rem;text-align:center;border-bottom:2px solid #facc15}
+.demo-banner a{color:#facc15;font-weight:700;text-decoration:none;white-space:nowrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.85rem 1.25rem;border-radius:999px;border:0;cursor:pointer;
+  font-weight:700;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease,background .15s;min-height:48px}
+.btn:active{transform:scale(.97)}
+.btn-wa{background:#25d366;color:#06381b}
+.btn-wa:hover{box-shadow:0 8px 24px rgba(37,211,102,.35)}
+.btn svg{width:20px;height:20px;flex:none}
+.section{padding:4rem 0}
+.eyebrow{display:inline-block;font-size:.75rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:.5rem}
+h1,h2,h3{line-height:1.15}
+h2{font-size:clamp(1.6rem,4.5vw,2.4rem);margin-bottom:.75rem}
+.lead{color:var(--muted);max-width:60ch}
+.grid{display:grid;gap:1rem}
+.note{font-size:.78rem;color:var(--muted);margin-top:.9rem}
+.tag-demo{display:inline-block;font-size:.65rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;padding:.15rem .45rem;border-radius:6px;background:#fef3c7;color:#92400e;vertical-align:middle}
+.field{display:grid;gap:.35rem}
+.field label{font-size:.85rem;font-weight:600}
+.field input,.field select,.field textarea{width:100%;padding:.8rem .9rem;border-radius:12px;border:1.5px solid var(--line);background:var(--field,#fff);min-height:48px}
+.field input:focus,.field select:focus,.field textarea:focus{outline:3px solid color-mix(in srgb,var(--accent) 35%,transparent);border-color:var(--accent)}
+.fab-wa{position:fixed;right:1rem;bottom:1rem;z-index:50;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;
+  box-shadow:0 10px 30px rgba(0,0,0,.25);text-decoration:none}
+.fab-wa svg{width:30px;height:30px;fill:#fff}
+.hours{width:100%;border-collapse:collapse;font-size:.92rem}
+.hours td{padding:.45rem 0;border-bottom:1px dashed var(--line)}
+.hours td:last-child{text-align:right;font-weight:600}
+.hours tr.today td{color:var(--accent);font-weight:800}
+.site-footer{padding:2.5rem 0 6rem;font-size:.85rem;color:var(--muted);border-top:1px solid var(--line)}
+.site-footer .credit{margin-top:1rem;padding:.8rem 1rem;border-radius:12px;background:color-mix(in srgb,var(--accent) 8%,transparent)}
+.site-footer .credit a{color:var(--accent);font-weight:700}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+.periods label,.seg label,.chips label,.sizes label{position:relative}
+.periods input,.seg input,.chips input,.sizes input{left:0;top:0;width:1px;height:1px;pointer-events:none}
+.sched-wrap>*,.order>*,.enroll>*,.booking>*,.info>*,.app>*,.hero-grid>*,.biz>*,.grid>*{min-width:0}
+.toast{position:fixed;left:50%;bottom:5.5rem;transform:translateX(-50%) translateY(20px);background:#111827;color:#fff;padding:.7rem 1rem;border-radius:12px;
+  font-size:.9rem;opacity:0;pointer-events:none;transition:.25s;z-index:80;max-width:90vw;text-align:center}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+
+:root{--bg:#fbf5ea;--ink:#2b1a10;--muted:#7a5c45;--accent:#c2410c;--accent2:#f59e0b;--line:#ead9c2;--card:#fffaf2;--wood:#3b2414}
+body{background:var(--bg)}
+.top{background:var(--wood);color:#fde7c7}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;align-items:center;gap:.55rem;font-weight:900;letter-spacing:.02em;text-decoration:none;font-family:Georgia,"Times New Roman",serif;font-size:1.1rem}
+.badge-star{width:38px;height:38px;display:grid;place-items:center;background:var(--accent2);color:var(--wood);clip-path:polygon(50% 0,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);font-size:.7rem;font-weight:900}
+.open{font-size:.78rem;padding:.3rem .7rem;border-radius:999px;background:rgba(255,255,255,.1);white-space:nowrap}
+.open.on{background:#16a34a;color:#fff}
+.hero{position:relative;color:#fff;padding:3.2rem 0 2.6rem;isolation:isolate;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;z-index:-2;background:url("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1400&q=70&auto=format") center/cover}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(43,26,16,.55),rgba(43,26,16,.92))}
+.wanted{display:inline-block;font-family:Georgia,serif;font-weight:900;letter-spacing:.25em;font-size:.75rem;border:2px solid var(--accent2);color:var(--accent2);padding:.3rem .7rem;transform:rotate(-2deg)}
+.hero h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.2rem,9vw,4.2rem);margin:.8rem 0 .6rem;line-height:1}
+.hero p{color:#fde7c7;max-width:48ch}
+.hero .meta{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:1rem;font-size:.82rem}
+.hero .meta span{background:rgba(255,255,255,.12);padding:.35rem .7rem;border-radius:999px;backdrop-filter:blur(6px)}
+.hero .cta{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1.4rem}
+.btn-fire{background:var(--accent);color:#fff}.btn-fire:hover{box-shadow:0 10px 26px rgba(194,65,12,.4)}
+.perks{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem;margin-top:-1.4rem;position:relative}
+.perks div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:.75rem .5rem;text-align:center;font-size:.74rem;color:var(--muted);box-shadow:0 10px 24px rgba(59,36,20,.08)}
+.perks b{display:block;color:var(--ink);font-size:.9rem}
+.cats{position:sticky;top:0;z-index:30;background:var(--bg);padding:.7rem 0;border-bottom:1px solid var(--line)}
+.cats .wrap{display:flex;gap:.45rem;overflow-x:auto;scrollbar-width:none}
+.cats a{flex:none;text-decoration:none;padding:.5rem .95rem;border-radius:999px;border:1.5px solid var(--line);font-weight:700;font-size:.88rem;background:var(--card)}
+.cats a.on{background:var(--wood);color:#fde7c7;border-color:var(--wood)}
+.menu h2{font-family:Georgia,serif;margin:2rem 0 .8rem;font-size:1.6rem;scroll-margin-top:70px}
+.items{display:grid;gap:.7rem}
+@media(min-width:760px){.items{grid-template-columns:1fr 1fr}}
+.item{display:flex;gap:.9rem;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:.9rem;align-items:center}
+.thumb{width:64px;height:64px;flex:none;border-radius:14px;display:grid;place-items:center;font-size:2rem;background:radial-gradient(circle at 30% 30%,#fde68a,#f59e0b 60%,#c2410c)}
+.item h3{font-size:1rem}.item p{font-size:.82rem;color:var(--muted);margin:.15rem 0 .35rem}
+.item .pr{font-weight:900;color:var(--accent)}
+.item .grow{flex:1;min-width:0}
+.qty{display:flex;align-items:center;gap:.35rem}
+.qty button{width:34px;height:34px;border-radius:10px;border:0;cursor:pointer;font-weight:900;font-size:1.1rem;background:var(--wood);color:#fde7c7}
+.qty button.minus{background:#ead9c2;color:var(--wood)}
+.qty span{min-width:1.3rem;text-align:center;font-weight:800}
+.loyal{margin-top:3rem;border-radius:26px;padding:1.6rem;background:var(--wood);color:#fde7c7;position:relative;overflow:hidden}
+.loyal h2{font-family:Georgia,serif;color:#fff}
+.stamps{display:grid;grid-template-columns:repeat(5,1fr);gap:.55rem;margin-top:1.1rem;max-width:420px}
+.stamps i{aspect-ratio:1;border-radius:50%;border:2px dashed #a1785a;display:grid;place-items:center;font-style:normal;font-size:1.2rem}
+.stamps i.on{background:var(--accent2);border:2px solid var(--accent2)}
+.stamps i.free{border-color:#fde68a;color:#fde68a;font-size:.6rem;font-weight:900}
+.info{display:grid;gap:1rem;margin-top:3rem}
+@media(min-width:760px){.info{grid-template-columns:1fr 1fr}}
+.box{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:1.3rem}
+.cartbar{position:fixed;left:.75rem;right:5rem;bottom:1rem;z-index:55;display:none;align-items:center;justify-content:space-between;gap:.6rem;padding:.75rem .9rem .75rem 1.1rem;border-radius:18px;background:var(--accent);color:#fff;box-shadow:0 14px 34px rgba(194,65,12,.45);cursor:pointer;border:0;font-weight:800;text-align:left}
+.cartbar.show{display:flex}
+.cartbar small{display:block;font-weight:600;opacity:.85;font-size:.75rem}
+.sheet-bg{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:70;opacity:0;pointer-events:none;transition:.25s}
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:71;max-height:92svh;overflow:auto;background:var(--bg);border-radius:24px 24px 0 0;padding:1.2rem 1.2rem 1.6rem;transform:translateY(105%);visibility:hidden;transition:transform .3s cubic-bezier(.2,.8,.2,1),visibility 0s .3s;max-width:640px;margin:0 auto}
+.open-sheet .sheet{transform:none;visibility:visible;transition:transform .3s cubic-bezier(.2,.8,.2,1)}.open-sheet .sheet-bg{opacity:1;pointer-events:auto}
+.sheet h3{font-family:Georgia,serif;font-size:1.4rem}
+.grab{width:44px;height:5px;border-radius:9px;background:#d6c2a8;margin:0 auto .8rem}
+.lines{display:grid;gap:.4rem;margin:.8rem 0;font-size:.92rem}
+.lines div{display:flex;justify-content:space-between;gap:.5rem}
+.tot{display:flex;justify-content:space-between;font-weight:900;font-size:1.1rem;padding:.7rem 0;border-top:2px dashed var(--line)}
+.seg{display:flex;gap:.4rem}
+.seg label{flex:1}.seg input{position:absolute;opacity:0}
+.seg span{display:block;text-align:center;padding:.65rem;border-radius:12px;border:1.5px solid var(--line);font-weight:700;cursor:pointer;font-size:.88rem;background:var(--card)}
+.seg input:checked+span{background:var(--wood);color:#fde7c7;border-color:var(--wood)}
+.form{display:grid;gap:.75rem}
+
+</style>
+</head>
+<body>
+<div class="demo-banner" role="note">
+  <span>🧪 <b>Prévia demonstrativa criada por Rafael</b> — fale comigo no WhatsApp</span>
+  <a href="https://wa.me/553891556365" target="_blank" rel="noopener">💬 (38) 9155-6365</a>
+</div>
+
+<header class="top"><div class="wrap"><a class="brand" href="#"><span class="badge-star">★</span>Hamburgueria do Sheriff</a><span class="open" id="openTag">Abre às 18h</span></div></header>
+<main>
+<section class="hero"><div class="wrap">
+ <span class="wanted">PROCURA-SE · FOME</span>
+ <h1>O burger mais procurado de Paracatu.</h1>
+ <p>Monte seu pedido aqui e envie direto pro WhatsApp do Sheriff — sem taxa de aplicativo, sem complicação.</p>
+ <div class="meta"><span>⭐ 4,6 no Google (151 avaliações)</span><span>🕕 Todos os dias, 18h–23h</span><span>🛵 Entrega ou retirada</span></div>
+ <div class="cta"><a class="btn btn-fire" href="#cardapio">Ver cardápio</a><a class="btn btn-wa" href="https://wa.me/5538984242942?text=Ol%C3%A1%2C%20Hamburgueria%20do%20Sheriff%21%20Vim%20pelo%20card%C3%A1pio%20online.%20%F0%9F%A4%A0" target="_blank" rel="noopener"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.7l-.4-.3-3.8 1.2 1.2-3.7-.3-.4c-1.2-1.8-1.8-3.8-1.8-5.9C5 9.9 10 5.1 16 5.1s11 4.8 11 10.7-5 10.6-11 10.6zm6-7.9c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2l-1 1.3c-.2.2-.4.2-.7.1-1.9-.9-3.2-1.8-4.4-3.9-.3-.6.3-.5 1-1.8.1-.2 0-.4 0-.6l-1-2.5c-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.4-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.4 3.7 5.9 5.2 2.2.9 3 1 4.1.8.7-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.3-.3-.4-.6-.5z"/></svg> Falar no WhatsApp</a></div>
+</div></section>
+<div class="wrap perks"><div><b>0%</b>taxa de app</div><div><b>Pix</b>ou cartão na entrega</div><div><b>10º grátis</b>cartão fidelidade</div></div>
+<nav class="cats" id="cardapio" aria-label="Categorias"><div class="wrap"><a href="#c0" data-c="0">🍔 Burgers</a><a href="#c1" data-c="1">🤠 Combos</a><a href="#c2" data-c="2">🍟 Porções</a><a href="#c3" data-c="3">🥤 Bebidas</a></div></nav>
+<section class="wrap menu">
+ <p class="note">Itens, descrições e preços <b>ilustrativos</b> <span class="tag-demo">exemplo</span> — na versão final, o cardápio real é cadastrado e editado pela loja.</p>
+ <h2 id="c0">🍔 Burgers</h2><div class="items"><article class="item"><div class="thumb">🍔</div><div class="grow"><h3>Cavaleiro</h3><p>Pão brioche, blend 160 g, cheddar, bacon crocante e molho da casa.</p><span class="pr">R$ 32,90</span></div><div class="qty"><button class="minus" data-id="cav" data-d="-1" aria-label="Remover Cavaleiro">−</button><span id="q-cav">0</span><button data-id="cav" data-d="1" aria-label="Adicionar Cavaleiro">+</button></div></article><article class="item"><div class="thumb">🍔</div><div class="grow"><h3>Duelo</h3><p>Dois blends 120 g, duplo queijo, cebola caramelizada e picles.</p><span class="pr">R$ 38,90</span></div><div class="qty"><button class="minus" data-id="due" data-d="-1" aria-label="Remover Duelo">−</button><span id="q-due">0</span><button data-id="due" data-d="1" aria-label="Adicionar Duelo">+</button></div></article><article class="item"><div class="thumb">🍔</div><div class="grow"><h3>Xerife Clássico</h3><p>Blend 150 g, queijo prato, alface, tomate e maionese verde.</p><span class="pr">R$ 27,90</span></div><div class="qty"><button class="minus" data-id="xer" data-d="-1" aria-label="Remover Xerife Clássico">−</button><span id="q-xer">0</span><button data-id="xer" data-d="1" aria-label="Adicionar Xerife Clássico">+</button></div></article><article class="item"><div class="thumb">🍔</div><div class="grow"><h3>Bang Bang Chicken</h3><p>Frango empanado crocante, queijo, salada e molho barbecue.</p><span class="pr">R$ 28,90</span></div><div class="qty"><button class="minus" data-id="bng" data-d="-1" aria-label="Remover Bang Bang Chicken">−</button><span id="q-bng">0</span><button data-id="bng" data-d="1" aria-label="Adicionar Bang Bang Chicken">+</button></div></article><article class="item"><div class="thumb">🍔</div><div class="grow"><h3>Saloon Veggie</h3><p>Burger de grão-de-bico, queijo, rúcula e tomate seco.</p><span class="pr">R$ 29,90</span></div><div class="qty"><button class="minus" data-id="sal" data-d="-1" aria-label="Remover Saloon Veggie">−</button><span id="q-sal">0</span><button data-id="sal" data-d="1" aria-label="Adicionar Saloon Veggie">+</button></div></article></div><h2 id="c1">🤠 Combos</h2><div class="items"><article class="item"><div class="thumb">🤠</div><div class="grow"><h3>Combo Pistoleiro</h3><p>1 burger à escolha + batata média + refri lata.</p><span class="pr">R$ 44,90</span></div><div class="qty"><button class="minus" data-id="cb1" data-d="-1" aria-label="Remover Combo Pistoleiro">−</button><span id="q-cb1">0</span><button data-id="cb1" data-d="1" aria-label="Adicionar Combo Pistoleiro">+</button></div></article><article class="item"><div class="thumb">🤠</div><div class="grow"><h3>Combo Bando (2 pessoas)</h3><p>2 burgers + batata grande + 2 refris lata.</p><span class="pr">R$ 84,90</span></div><div class="qty"><button class="minus" data-id="cb2" data-d="-1" aria-label="Remover Combo Bando (2 pessoas)">−</button><span id="q-cb2">0</span><button data-id="cb2" data-d="1" aria-label="Adicionar Combo Bando (2 pessoas)">+</button></div></article></div><h2 id="c2">🍟 Porções</h2><div class="items"><article class="item"><div class="thumb">🍟</div><div class="grow"><h3>Batata rústica</h3><p>Porção média com páprica e alecrim.</p><span class="pr">R$ 18,90</span></div><div class="qty"><button class="minus" data-id="bat" data-d="-1" aria-label="Remover Batata rústica">−</button><span id="q-bat">0</span><button data-id="bat" data-d="1" aria-label="Adicionar Batata rústica">+</button></div></article><article class="item"><div class="thumb">🍟</div><div class="grow"><h3>Onion rings</h3><p>Anéis de cebola empanados, molho da casa.</p><span class="pr">R$ 21,90</span></div><div class="qty"><button class="minus" data-id="onr" data-d="-1" aria-label="Remover Onion rings">−</button><span id="q-onr">0</span><button data-id="onr" data-d="1" aria-label="Adicionar Onion rings">+</button></div></article><article class="item"><div class="thumb">🍟</div><div class="grow"><h3>Batata cheddar & bacon</h3><p>Porção grande coberta.</p><span class="pr">R$ 29,90</span></div><div class="qty"><button class="minus" data-id="bcc" data-d="-1" aria-label="Remover Batata cheddar & bacon">−</button><span id="q-bcc">0</span><button data-id="bcc" data-d="1" aria-label="Adicionar Batata cheddar & bacon">+</button></div></article></div><h2 id="c3">🥤 Bebidas</h2><div class="items"><article class="item"><div class="thumb">🥤</div><div class="grow"><h3>Refrigerante lata</h3><p>350 ml.</p><span class="pr">R$ 6,50</span></div><div class="qty"><button class="minus" data-id="ref" data-d="-1" aria-label="Remover Refrigerante lata">−</button><span id="q-ref">0</span><button data-id="ref" data-d="1" aria-label="Adicionar Refrigerante lata">+</button></div></article><article class="item"><div class="thumb">🥤</div><div class="grow"><h3>Suco natural</h3><p>500 ml, sabores do dia.</p><span class="pr">R$ 9,90</span></div><div class="qty"><button class="minus" data-id="suc" data-d="-1" aria-label="Remover Suco natural">−</button><span id="q-suc">0</span><button data-id="suc" data-d="1" aria-label="Adicionar Suco natural">+</button></div></article><article class="item"><div class="thumb">🥤</div><div class="grow"><h3>Água mineral</h3><p>500 ml.</p><span class="pr">R$ 4,00</span></div><div class="qty"><button class="minus" data-id="agu" data-d="-1" aria-label="Remover Água mineral">−</button><span id="q-agu">0</span><button data-id="agu" data-d="1" aria-label="Adicionar Água mineral">+</button></div></article></div>
+ <div class="loyal"><span class="eyebrow" style="color:var(--accent2)">Cartão fidelidade</span><h2>A cada 10 pedidos, o próximo burger é por conta do Sheriff</h2>
+  <p style="margin-top:.4rem;font-size:.92rem">O cliente acumula selos automaticamente pelo número do WhatsApp. <span class="tag-demo">regra ilustrativa</span></p>
+  <div class="stamps"><i class="on">🤠</i><i class="on">🤠</i><i class="on">🤠</i><i class="on">🤠</i><i class="on">🤠</i><i class="on">🤠</i><i></i><i></i><i></i><i class="free">GRÁTIS</i></div>
+  <p class="note" style="color:#d6b896">Exemplo: cliente com 6 de 10 selos.</p></div>
+ <div class="info">
+  <div class="box"><h3 style="margin-bottom:.5rem">Horário</h3><table class="hours"><tr data-day="1"><td>Segunda</td><td>18:00 – 23:00</td></tr><tr data-day="2"><td>Terça</td><td>18:00 – 23:00</td></tr><tr data-day="3"><td>Quarta</td><td>18:00 – 23:00</td></tr><tr data-day="4"><td>Quinta</td><td>18:00 – 23:00</td></tr><tr data-day="5"><td>Sexta</td><td>18:00 – 23:00</td></tr><tr data-day="6"><td>Sábado</td><td>18:00 – 23:00</td></tr><tr data-day="0"><td>Domingo</td><td>18:00 – 23:00</td></tr></table><p class="note">Conforme ficha pública do Google; confirmar com a loja.</p></div>
+  <div class="box"><h3 style="margin-bottom:.5rem">Endereço</h3><p>📍 Rua Joaquim da Silva Pereira – Paracatu – MG, 38600-033</p><p style="margin-top:.4rem">📞 (38) 98424-2942</p>
+   <a class="btn btn-fire" style="margin-top:1rem" href="https://www.google.com/maps/search/?api=1&query=Hamburgueria%20do%20Sheriff%20Paracatu" target="_blank" rel="noopener">🗺️ Ver no mapa</a></div>
+ </div>
+</section>
+</main>
+<footer class="site-footer"><div class="wrap">
+  <p><b>Hamburgueria do Sheriff</b> · Rua Joaquim da Silva Pereira – Paracatu – MG, 38600-033 · (38) 98424-2942</p>
+  
+  <div class="credit">Esta é uma <b>prévia demonstrativa</b> feita por Rafael para apresentar uma ideia de site. Textos de exemplo, preços, itens, nomes e fotos são <b>ilustrativos</b> (fotos: Unsplash, licença livre). Nome, endereço, telefone, horários e nota do Google vêm de fontes públicas. Não é o site oficial do estabelecimento.<br>
+  Gostou? Fale comigo no WhatsApp: <a href="https://wa.me/553891556365" target="_blank" rel="noopener">(38) 9155-6365</a> · <a href="https://rafaelytofc7-spec.github.io/gateway-ia/" target="_blank" rel="noopener">veja o portfólio do Rafael</a>.</div>
+</div></footer>
+<button class="cartbar" id="cartbar"><span><span id="cbCount">0 itens</span><small>Toque para revisar e enviar</small></span><span id="cbTotal">R$ 0,00</span></button>
+<a class="fab-wa" href="https://wa.me/5538984242942?text=Ol%C3%A1%2C%20Hamburgueria%20do%20Sheriff%21%20Vim%20pelo%20card%C3%A1pio%20online.%20%F0%9F%A4%A0" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.7l-.4-.3-3.8 1.2 1.2-3.7-.3-.4c-1.2-1.8-1.8-3.8-1.8-5.9C5 9.9 10 5.1 16 5.1s11 4.8 11 10.7-5 10.6-11 10.6zm6-7.9c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2l-1 1.3c-.2.2-.4.2-.7.1-1.9-.9-3.2-1.8-4.4-3.9-.3-.6.3-.5 1-1.8.1-.2 0-.4 0-.6l-1-2.5c-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.4-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.4 3.7 5.9 5.2 2.2.9 3 1 4.1.8.7-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.3-.3-.4-.6-.5z"/></svg></a>
+<div class="sheet-bg" id="sheetBg"></div>
+<div class="sheet" role="dialog" aria-modal="true" aria-label="Seu pedido">
+ <div class="grab"></div><h3>Seu pedido 🤠</h3>
+ <div class="lines" id="lines"></div>
+ <div class="tot"><span>Total dos itens</span><span id="tot">R$ 0,00</span></div>
+ <form class="form" id="orderForm" novalidate>
+  <div class="seg"><label><input type="radio" name="mode" value="Entrega" checked><span>🛵 Entrega</span></label><label><input type="radio" name="mode" value="Retirada"><span>🏃 Retirada</span></label></div>
+  <div class="field"><label for="on">Seu nome</label><input id="on" autocomplete="name" placeholder="Nome"></div>
+  <div class="field" id="addrF"><label for="oa">Endereço de entrega</label><input id="oa" autocomplete="street-address" placeholder="Rua, número, bairro, referência"></div>
+  <div class="field"><label for="op">Pagamento</label><select id="op"><option>Pix</option><option>Cartão (maquininha)</option><option>Dinheiro</option></select></div>
+  <div class="field" id="trocoF" hidden><label for="ot">Troco para</label><input id="ot" inputmode="decimal" placeholder="Ex.: 100"></div>
+  <div class="field"><label for="oo">Observações</label><input id="oo" placeholder="Ex.: sem cebola, ponto da carne"></div>
+  <button class="btn btn-wa" type="submit"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.7l-.4-.3-3.8 1.2 1.2-3.7-.3-.4c-1.2-1.8-1.8-3.8-1.8-5.9C5 9.9 10 5.1 16 5.1s11 4.8 11 10.7-5 10.6-11 10.6zm6-7.9c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2l-1 1.3c-.2.2-.4.2-.7.1-1.9-.9-3.2-1.8-4.4-3.9-.3-.6.3-.5 1-1.8.1-.2 0-.4 0-.6l-1-2.5c-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.4-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.4 3.7 5.9 5.2 2.2.9 3 1 4.1.8.7-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.3-.3-.4-.6-.5z"/></svg> Enviar pedido no WhatsApp</button>
+  <button class="btn" type="button" id="closeSheet" style="background:transparent">Continuar comprando</button>
+ </form>
+</div>
+<script>
+
+function waOpen(phone,text){window.open('https://wa.me/'+phone+'?text='+encodeURIComponent(text),'_blank','noopener');}
+function toast(msg){let t=document.querySelector('.toast');if(!t){t=document.createElement('div');t.className='toast';document.body.appendChild(t);}t.textContent=msg;t.classList.add('show');clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove('show'),2200);}
+(function(){const io='IntersectionObserver' in window?new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12}):null;
+document.querySelectorAll('.reveal').forEach(el=>io?io.observe(el):el.classList.add('in'));
+const d=new Date().getDay();document.querySelectorAll('.hours tr[data-day]').forEach(tr=>{if(+tr.dataset.day===d)tr.classList.add('today');});})();
+
+const PHONE='5538984242942';const ITEMS={"cav": ["Cavaleiro", 32.9], "due": ["Duelo", 38.9], "xer": ["Xerife Clássico", 27.9], "bng": ["Bang Bang Chicken", 28.9], "sal": ["Saloon Veggie", 29.9], "cb1": ["Combo Pistoleiro", 44.9], "cb2": ["Combo Bando (2 pessoas)", 84.9], "bat": ["Batata rústica", 18.9], "onr": ["Onion rings", 21.9], "bcc": ["Batata cheddar & bacon", 29.9], "ref": ["Refrigerante lata", 6.5], "suc": ["Suco natural", 9.9], "agu": ["Água mineral", 4.0]};const cart={};
+const brl=v=>'R$ '+v.toFixed(2).replace('.',',');
+function render(){let n=0,t=0;for(const k in cart){n+=cart[k];t+=cart[k]*ITEMS[k][1];document.getElementById('q-'+k).textContent=cart[k];}
+ document.querySelectorAll('[id^=q-]').forEach(s=>{const k=s.id.slice(2);if(!cart[k])s.textContent='0';});
+ const cb=document.getElementById('cartbar');cb.classList.toggle('show',n>0);document.getElementById('cbCount').textContent=n+(n===1?' item':' itens');document.getElementById('cbTotal').textContent=brl(t);
+ document.getElementById('lines').innerHTML=Object.keys(cart).map(k=>`<div><span>${cart[k]}× ${ITEMS[k][0]}</span><b>${brl(cart[k]*ITEMS[k][1])}</b></div>`).join('')||'<p class="note">Carrinho vazio.</p>';
+ document.getElementById('tot').textContent=brl(t);return t;}
+document.querySelectorAll('.qty button').forEach(b=>b.onclick=()=>{const k=b.dataset.id;cart[k]=(cart[k]||0)+(+b.dataset.d);if(cart[k]<=0)delete cart[k];render();if(+b.dataset.d>0)toast('+1 '+ITEMS[k][0]);});
+const body=document.body;document.getElementById('cartbar').onclick=()=>body.classList.add('open-sheet');
+document.getElementById('sheetBg').onclick=document.getElementById('closeSheet').onclick=()=>body.classList.remove('open-sheet');
+document.querySelectorAll('input[name=mode]').forEach(r=>r.onchange=()=>document.getElementById('addrF').hidden=r.value==='Retirada'&&r.checked);
+document.getElementById('op').onchange=e=>document.getElementById('trocoF').hidden=e.target.value!=='Dinheiro';
+document.getElementById('orderForm').addEventListener('submit',e=>{e.preventDefault();const t=render();if(!t){toast('Adicione itens ao pedido');return;}
+ const nm=document.getElementById('on');if(!nm.value.trim()){nm.focus();toast('Informe seu nome');return;}
+ const mode=document.querySelector('input[name=mode]:checked').value;const ad=document.getElementById('oa');if(mode==='Entrega'&&!ad.value.trim()){ad.focus();toast('Informe o endereço');return;}
+ const pay=document.getElementById('op').value;const troco=document.getElementById('ot').value;
+ let m='🤠 *Novo pedido — Hamburgueria do Sheriff*\n\n'+Object.keys(cart).map(k=>`• ${cart[k]}x ${ITEMS[k][0]} — ${brl(cart[k]*ITEMS[k][1])}`).join('\n');
+ m+=`\n\n*Total dos itens:* ${brl(t)}\n*Cliente:* ${nm.value.trim()}\n*${mode}*${mode==='Entrega'?': '+ad.value.trim():''}\n*Pagamento:* ${pay}${pay==='Dinheiro'&&troco?' (troco p/ R$ '+troco+')':''}`;
+ const ob=document.getElementById('oo').value;if(ob)m+=`\n*Obs.:* ${ob}`;m+='\n\n(Pedido feito pelo cardápio online)';waOpen(PHONE,m);});
+// open/closed tag (18h–23h every day)
+(function(){const h=new Date().getHours(),el=document.getElementById('openTag');if(h>=18&&h<23){el.textContent='● Aberto agora';el.classList.add('on');}})();
+// active category on scroll
+const links=[...document.querySelectorAll('.cats a')];const hs=links.map(a=>document.getElementById(a.getAttribute('href').slice(1)));
+addEventListener('scroll',()=>{let i=0;hs.forEach((h,j)=>{if(h.getBoundingClientRect().top<120)i=j;});links.forEach((a,j)=>a.classList.toggle('on',j===i));},{passive:true});links[0].classList.add('on');
+render();
+</script></body></html>
